@@ -1,0 +1,110 @@
+//  Animations
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+.c-cards{
+    .card{
+        width: 100%;
+        height: 100%;
+        max-height: 350px;
+        max-width: 350px;
+        aspect-ratio: 1;
+        position: relative;
+        margin: 15px 0;
+        cursor: pointer;
+        border-radius: 15px;
+        border: 0;
+        animation: fadeIn 1.5s;
+        &.rotated {
+            .card-front{
+                transform: perspective(600px) rotateY(180deg);
+            }
+            .card-back{
+                transform: perspective(600px) rotateY(0deg);
+            }
+        }
+        .card-front,
+        .card-back{
+            border-radius: 15px;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            overflow: hidden;
+            position: absolute;
+            transition: transform .6s linear;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .card-front{
+            transform: perspective(600px) rotateY(0deg);
+            .card-title-bar{
+                background-color: rgba(0,0,0,.5);
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                color: white;
+                height: 80px;
+                transition: .5s ease-in-out;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .card-title{
+                    height: 70px;
+                    transition: all .5s ease-in-out;
+                    clip-path: polygon(0% 0%, /* Left Top */
+                                100% 0%, /* Right Top */
+                                100% 50%, /* Right Bottom */
+                                0% 50%); /* Left Bottom */
+                }
+                .author-title{
+                    bottom: 0;
+                    position: absolute;
+                    width: 100%;
+                }
+            }
+            
+            &:hover{
+                cursor:pointer;
+                .card-title-bar{
+                    height: 100%;
+                    .card-title{
+                        height: max-content;
+                        min-height: 70px;
+                        transition: all .5s ease-in-out;
+                        clip-path: polygon(0% 0%, /* Left Top */
+                                        100% 0%,  /* Right Top */
+                                        100% 100%,  /* Right Bottom */
+                                        0% 100%);  /* Left Bottom */
+                    }
+                }
+            }
+        }
+        .card-back{
+            transform: perspective(600px) rotateY(-180deg); 
+            .card-information{
+                background-color: rgba(255,255,255,.75);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                p{
+                    font-weight: 600;
+                    margin: 0;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
