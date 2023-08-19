@@ -8,8 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Unzip file provided
 
-In terminal navigate to root folder and run “npm install”
-### `npm start`
+In terminal navigate to root folder and run `npm install`
+
+Once installed run with `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
