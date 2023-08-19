@@ -3,7 +3,8 @@
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create*react*app).
-
+And [sass](https://www.npmjs.com/package/sass)
+No additional libraries or plugins were used
 ## How to run locally
 
 Unzip file provided
@@ -36,4 +37,3 @@ Pagination provided
 
 Mobile friendly
 
-Create*React*App was used to build this project, as well as sass no additional libraries or plugins were used
