@@ -22,18 +22,18 @@ You may also see any lint errors in the console.
 ## Features
 
 View the entire digital gallery of the Art Institute of Chicago!
-	*Information about pieces 
-		* Image if available
-		* Artist if known
-		* Additional information, including time period/date and location made/found
+	Information about pieces 
+		Image if available
+		Artist if known
+		Additional information, including time period/date and location made/found
 
 Pagination provided
 
 **Keyboard functionality**
-	* Tab through each piece
-	* Hit Enter to turn the card and view additional information
-	* Tab through pagination
+	Tab through each piece
+	Hit Enter to turn the card and view additional information
+	Tab through pagination
 
 Mobile friendly
 
-Create*React*App was used to build this project, as well as sass * no additional libraries or plugins were used
+Create*React*App was used to build this project, as well as sass no additional libraries or plugins were used
