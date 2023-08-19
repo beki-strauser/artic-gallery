@@ -6,8 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 And [sass](https://www.npmjs.com/package/sass)
 No additional libraries or plugins were used
 ## How to run locally
+Node.js and NPM are required to run this porject locally
 
-Unzip file provided
+Download code and unzip
 
 In terminal navigate to root folder and run `npm install`
 
